@@ -3,5 +3,5 @@ module.exports = {
   name: 'zhinga',
   title: 'ba kheir bin',
   url: 'https://har-bezhi-guys.netlify.com/',
-  themeColor: '#fb1',
+  themeColor: 'blue',
 };
