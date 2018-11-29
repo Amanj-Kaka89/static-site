@@ -1,5 +1,6 @@
 ---
 title: one
+tags: nav
 summary: fjdhfjehfjeh gfjefhejefhejdsjfh jfe gfej fhadsjfhjabcjh
 ---
 ## Hey
