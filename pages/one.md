@@ -1,12 +1,9 @@
 ---
-title: one
-summary: fjdhfjehfjeh gfjefhejefhejdsjfh jfe gfej fhadsjfhjabcjh
+title: Page One Title
+slug: one
+tags: nav
+summary: I am a page summary
 ---
 ## Hey
 
-fshfkj fdhfgjd jdfgdjfhqkfjakfjamfhihdfjsfdhjwq h
-
-
-
-
----
+Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
