@@ -1,7 +1,7 @@
 ---
-title: Welcome to Page Three
-slug: three
+title: updated oage three
 tags: nav
+slug: three
 ---
 
 ## Welcome
