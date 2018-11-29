@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: master
 
-# display_url: 
-# logo_url: 
+display_url: https://har-bezhi-guys.netlify.com
+logo_url: https://har-bezhi-guys.netlify.com/assets/favicons/android-chrome-384x384.png
 public_folder: '/images'
 media_folder: 'source/images'
-# media_library:
-#   name: uploadcare
-#   config:
-    # publicKey: 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 1e5c4d3f139752a0f159
 
 collections:
   - name: 'pages'
