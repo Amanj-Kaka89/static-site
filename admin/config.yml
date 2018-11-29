@@ -22,6 +22,7 @@ collections:
         file: 'pages/one.md'
         fields:
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Tags', name: 'tags', widget: 'text'}
           - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'one'}
           - {label: 'summary', name: 'summary', hint: 'Will be displayed as a larger text', widget: 'text'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
