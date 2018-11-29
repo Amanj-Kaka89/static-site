@@ -17,15 +17,23 @@ collections:
     editor:
       preview: false
     files:
-      - label: 'Page one'
+      - label: 'Page One'
         name: 'one'
         file: 'pages/one.md'
         fields:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Tags', name: 'tags', widget: 'text'}
           - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'one'}
-          - {label: 'summary', name: 'summary', hint: 'Will be displayed as a larger text', widget: 'text'}
+          - {label: 'Summary', name: 'summary', hint: 'Will be displayed as a larger text', widget: 'text'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: 'FAQ'
+        name: 'fag'
+        file: 'pages/fag.md'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
+          - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'fag'}
+          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq'}
 
   
 #   # - name: 'posts'
