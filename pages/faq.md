@@ -1,3 +1,4 @@
+---
 title: Frequently Asked Questions
 slug: faq
 tags: nav
@@ -9,4 +10,5 @@ questions:
   question: What is your address?
 - answer: Coding,Swimming
   question: Points of Interest?
+  ---
 
