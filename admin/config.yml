@@ -27,9 +27,9 @@ collections:
           - {label: 'Summary', name: 'summary', hint: 'Will be displayed as a larger text', widget: 'text'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
-      - label: 'Page Three'
-        name: 'three'
-        file: 'pages/three.md'
+      - label: 'Page Two'
+        name: 'two'
+        file: 'pages/two.md'
         fields:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
@@ -48,8 +48,8 @@ collections:
       # - label: "Questions"
       #   name: "questions"
       #   widget: "list"
-      #   fields: 
-      #     - {label: 'Question', name: 'question', widget: 'string'}
+      #   field: 
+      #     - {label: 'Question', name: 'question', widget: 'list'}
   
 #   # - name: 'posts'
 #   #   label: 'Posts'
