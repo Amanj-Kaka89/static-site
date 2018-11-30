@@ -36,14 +36,14 @@ collections:
           - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'two'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
-      # - label: 'FAQ'
-      #   name: 'faq'
-      #   file: 'pages/faq.md'
-      #   fields:
-      #     - {label: 'Title', name: 'title', widget: 'string'}
-      #     - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
-      #     - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq'}
-      #     - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq'}
+      - label: 'FAQ'
+        name: 'faq'
+        file: 'pages/faq.md'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
+          - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq'}
+          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq'}
 
       # - label: 'Questions'
       #   name: 'questions'

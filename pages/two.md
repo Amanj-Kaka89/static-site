@@ -1,5 +1,5 @@
 ---
-title:  Page Two
+title: Page Two
 tags: nav
 slug: two
 ---
