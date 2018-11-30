@@ -45,12 +45,13 @@ collections:
           - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq'}
           - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq'}
 
-      # - label: "Questions"
-      #   name: "questions"
-      #   widget: "list"
-      #   field: 
-      #     - {label: 'Question', name: 'question', widget: 'list'}
+      - label: 'Questions'
+        name: 'questions'
+        widget: 'list'
+        field: 
+          - {label: 'Question', name: 'question', widget: 'question'}
   
+
 #   # - name: 'posts'
 #   #   label: 'Posts'
 #   #   label_singular: 'Post'

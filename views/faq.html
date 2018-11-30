@@ -1,0 +1,22 @@
+{% for question in collections.questions%}
+<ol>
+<li>
+{% input type="checkbox" checked %}
+<i></i>
+<h2>What is your name?</h2>
+<p>Mr. Cool</p>
+</li>
+<li>
+{% input type="checkbox" checked %}
+<i></i>
+<h2>What is your address?</h2>
+<p>Cool Street</p>
+</li>
+<li>
+{% input type="checkbox" checked %}
+<i></i>
+<h2>Points of Interest?</h2>
+<p>Coding,Swimming</p>
+</li>
+</ol>
+{% endfor %}
