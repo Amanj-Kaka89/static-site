@@ -26,7 +26,6 @@ collections:
           - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'one'}
           - {label: 'Summary', name: 'summary', hint: 'Will be displayed as a larger text', widget: 'text'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
-
       - label: 'Page Two'
         name: 'two'
         file: 'pages/two.md'
@@ -35,7 +34,6 @@ collections:
           - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
           - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'two'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
-
       # - label: 'FAQ'
       #   name: 'faq'
       #   file: 'pages/faq.md'
@@ -44,7 +42,6 @@ collections:
       #     - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
       #     - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq'}
       #     - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq'}
-
       # - label: 'Questions'
       #   name: 'questions'
       #   widget: 'list'
