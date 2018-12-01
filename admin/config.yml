@@ -48,8 +48,6 @@ collections:
             fields: 
               - {label: 'Question', name: 'question', widget: 'string'}
               - {label: 'Answer', name: 'answer', widget: 'text'}
-      
-
 #   # - name: 'posts'
 #   #   label: 'Posts'
 #   #   label_singular: 'Post'
