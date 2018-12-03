@@ -48,15 +48,15 @@ collections:
             fields: 
               - {label: 'Question', name: 'question', widget: 'string'}
               - {label: 'Answer', name: 'answer', widget: 'text'}
-    - name: 'events'
-      label: 'Events'
-      editor:
-        preview: false
-      folder: 'events'
-      create: true
-      slug: '{{slug}}'
-      fields:
-        - {label: 'Title', name: 'title', widget: 'string'}
+  - name: 'events'
+    label: 'Events'
+    editor:
+      preview: false
+    folder: 'events'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string'}
         - {label: 'Date', name: 'date', widget: 'date'}
         - {label: 'Image', name: 'image', widget: 'image', required: false}
         - {label: 'Location', name: 'location', widget: 'string'}
