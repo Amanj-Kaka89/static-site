@@ -4,7 +4,7 @@
     "name": "zhinga",
     "title": "ba kheir bin",
     "url": "https://har-bezhi-guys.netlify.com/",
-    "themeColor": "blue"
+    "themeColor": "blue",
     "skipEmpty": ["home", "faq", "events"],
     "admin": "admin@email.com"
   }
