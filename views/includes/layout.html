@@ -4,13 +4,8 @@
   {% include 'includes/header.html' %}
 
   <main class="wrapper">
-    {% comment %} {% if content == '' %}
-      {% include 'includes/empty.html' %}
-    {% else %} {% endcomment %}
       {% block content %}{% endblock %}
-    {% endif %}
   </main>
-
   {% include 'includes/footer.html' %}
   {% include 'includes/scripts.html' %}
 </body>
