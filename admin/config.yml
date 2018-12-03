@@ -48,6 +48,26 @@ collections:
             fields: 
               - {label: 'Question', name: 'question', widget: 'string'}
               - {label: 'Answer', name: 'answer', widget: 'text'}
+
+ - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: 'Site Settings'
+        name: 'settings'
+        file: 'config/config.json'
+        fields:
+          - label: 'General'
+            name: 'site'
+            widget: 'object'
+            fields:
+              - { label: 'Site Name', name: 'name', widget: 'string' }
+              - { label: 'Language', name: 'lang', widget: 'string' }
+              - { label: 'Default Title', name: 'title', widget: 'string' }
+              - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://' }
+              - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff' }
 #   # - name: 'posts'
 #   #   label: 'Posts'
 #   #   label_singular: 'Post'
