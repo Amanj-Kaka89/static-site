@@ -13,7 +13,7 @@
       {% endif %}
       
       <a href="{{ item.url }}" class="{{ class }}">
-        {{ item.data.title }}
+        {{ item.data.navtitle | default: item.data.title }}
       </a>
 
     {% endfor %}

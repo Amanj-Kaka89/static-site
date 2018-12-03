@@ -3,6 +3,7 @@ title: Frequantely asked questions
 slug: faq
 layout: faq
 tags: nav
+navtitle: Questions
 questions:
   - answer: Answer one
     question: Question one
