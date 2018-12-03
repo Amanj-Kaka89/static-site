@@ -65,7 +65,6 @@ collections:
         name: 'tags'
         widget: 'list'
         hint: 'Comma seperate values and must include 'event' .For example event, tech, food, sport'
-        
   - name: 'settings'
     label: 'Settings'
     delete: false
