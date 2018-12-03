@@ -1,11 +1,9 @@
 {
   "site": {
-    "lang": "en",
     "name": "zhinga",
-    "title": "ba kheir bin",
+    "lang": "en",
+    "title": "quas hatin",
     "url": "https://har-bezhi-guys.netlify.com/",
-    "themeColor": "blue",
-    "skipEmpty": ["home", "faq", "events"],
-    "admin": "admin@email.com"
+    "themeColor": "green"
   }
 }
