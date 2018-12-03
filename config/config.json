@@ -8,4 +8,4 @@
     "skipEmpty": ["home", "faq", "events"],
     "admin": "admin@email.com"
   }
-};
+}
