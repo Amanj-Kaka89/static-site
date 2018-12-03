@@ -57,14 +57,14 @@ collections:
     slug: '{{slug}}'
     fields:
       - {label: 'Title', name: 'title', widget: 'string'}
-        - {label: 'Date', name: 'date', widget: 'date'}
-        - {label: 'Image', name: 'image', widget: 'image', required: false}
-        - {label: 'Location', name: 'location', widget: 'string'}
-        - {label: 'Body', name: 'body', widget: 'markdown'}
-        - label: 'Tags'
-          name: 'tags'
-          widget: 'list'
-          hint: 'Comma seperate values'
+      - {label: 'Date', name: 'date', widget: 'date'}
+      - {label: 'Image', name: 'image', widget: 'image', required: false}
+      - {label: 'Location', name: 'location', widget: 'string'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        hint: 'Comma seperate values'
   - name: 'settings'
     label: 'Settings'
     delete: false
