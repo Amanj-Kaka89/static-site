@@ -1,0 +1,27 @@
+{% comment %} <div class="grid">
+ {% for event in collections.event %}
+ {{ event.url }}
+ {{ event.data.title }}
+ {{ event.data.location }}
+ {{ event.data.data }}
+ {{ event.data.content }}
+ {% endfor %}
+ </div> {% endcomment %}
+ <div class="grid">
+  {% for event in collections.event %} 
+    <a class="grid__item" href="{{ event.url }}">
+      <div>
+        <time>
+          {% Icon 'clock' %} 
+          <span class="h6 caps spaced">Jan 24, 2018</span>
+        </time>
+
+        <span>
+          {% Icon 'location' %} 
+          <span class="h6 caps spaced">{{ event.data.location }}</span>
+        </span> 
+      </div>
+      <h4 class="h2 white">{{ event.data.title }}</h4>
+    </a>
+  {% endfor %}
+</div>

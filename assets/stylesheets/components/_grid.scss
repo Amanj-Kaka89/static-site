@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-gap: $s*1.5;
+  grid-template-columns: repeat(auto-fit, minmax($s*10, 1fr));
+
+  &__item {
+    box: vertical space-between;
+    text-decoration: none;
+    padding: $s*2;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8) 80%),
+      url(https://cdn.dribbble.com/users/966188/screenshots/4832657/1_01.jpg);
+    background-size: cover;
+    transition: all $fast ease-in-out;
+
+    >div {
+      box: horizontal space-between;
+      margin-bottom: $s*7;
+    }
+
+    time,
+    span {
+      box: horizontal middle;
+      color: $white;
+    }
+
+    svg {
+      size: $s;
+      margin-right: $q;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 6px 20px 0 rgba(0, 0, 0, .2);
+    }
+  }
+}

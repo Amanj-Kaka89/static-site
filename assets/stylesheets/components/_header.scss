@@ -16,4 +16,8 @@
       padding: $h;
     }
   }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
 }
