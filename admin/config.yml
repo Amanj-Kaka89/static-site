@@ -48,7 +48,7 @@ collections:
             fields: 
               - {label: 'Question', name: 'question', widget: 'string'}
               - {label: 'Answer', name: 'answer', widget: 'text'}
- - name: 'settings'
+  - name: 'settings'
     label: 'Settings'
     delete: false
     editor:
