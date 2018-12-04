@@ -1,5 +1,5 @@
 ---
-title: Page One Title 
+title: Page One
 tags: nav
 slug: one
 summary: I am a page summary
