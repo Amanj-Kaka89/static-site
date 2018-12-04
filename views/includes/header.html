@@ -1,8 +1,8 @@
 <header
  {% if config.site.logoOrientation == 'right' %}
- class="header header--reverse container"
+ class="container header header--reverse"
  {% else %}
- class="header container" {% endif %}>
+ class="container header" {% endif %}>
   <a href="{{ config.site.url }}" class="logo">
     {% Icon 'logo' %}
   </a>
