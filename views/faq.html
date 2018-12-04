@@ -2,15 +2,15 @@
 
 {% block content %}
 
-  <div class="faqContainer">
-    <h1>CSS + HTML only Accordion Element</h1>
-    {{ content }}
-    <div class="faq">
-      {% for qa in questions %}
-        <h1> {{ qa.answer }}</h1>
-        <p> {{ qa.question }} </p>
-      {% endfor %} 
+  <div class="accordion">
+        {% for qa in questions %}
+    <div class="accordion_item">
+      <input type="checkbox" checked>
+      {% Icon 'plus' %}
+        <h1>{{ qa.answer }}</h1>
+        <p>{{ qa.question }} </p>
     </div> 
+    {% endfor %} 
   </div>
   
 {% endblock %}

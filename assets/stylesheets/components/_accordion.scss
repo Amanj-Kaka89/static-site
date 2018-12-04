@@ -1,0 +1,42 @@
+.accordion {
+    &__item {
+        position: relative;
+        border-bottom: 1px solid $gray-300;
+
+        svg {
+            position: absolute;
+            top: $h;
+            right: $h;
+            fill: $gray-300;
+            size: $s*1.75;
+            transform: rotate(45deg);
+            transition: transform $regular ease-in-out;
+        }
+
+        p {
+            max-height: $s*50;
+            opacity: 1;
+            transition: all $fast ease-in-out;
+        }
+
+        input {
+            position: absolute;
+            margin: 0;
+            size: 100%;
+            opacity: 0;
+            cursor: pointer;
+
+            &:checked {
+                &~p {
+                    max-height: 0;
+                    opacity: 0;
+                }
+
+                &~svg {
+                    transform: rotate(0);
+                }
+            }
+        }
+
+    }
+}
