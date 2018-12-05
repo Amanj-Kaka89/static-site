@@ -14,7 +14,7 @@ const formData = {
   email: email.value,
   comment: comment.value,
   priority: document.querySelector('input[name="priority"]:checked').value,
-  topic: [...document.querySelectorAll('input[type="checkbox"]:checked')].map(v => v.value),
+  topic: [...document.querySelectorAll('.options input[type="checkbox"]:checked')].map(v => v.value),
 };
 const clearForm = () => {
   name.value = '';
