@@ -10,11 +10,11 @@ const comment = document.querySelector('.comment');
 
 // ðŸ‘‡ Write homework code here
 const formData = {
-  name: name.value,
-  email: email.value,
-  comment: comment.value,
-  priority: document.querySelector('input[name="priority"]:checked').value,
-  topic: [...document.querySelectorAll('.options input[type="checkbox"]:checked')].map(v => v.value),
+  Name: name.value,
+  Email: email.value,
+  Comment: comment.value,
+  Priority: document.querySelector('input[name="priority"]:checked').value,
+  Topics: [...document.querySelectorAll('.options input[type="checkbox"]:checked')].map(v => v.value),
 };
 const clearForm = () => {
   name.value = '';
