@@ -27,6 +27,7 @@ const clearForm = () => {
 
 const handleSubmit = e => {
   e.preventDefault();
+  clearForm();
   axios
     .post(config.site.url, qs.stringify({ 'form-name': 'Comments', ...formData }, { arrayFormat: 'brackets' }))
     .then(_ => console.log('success'))
