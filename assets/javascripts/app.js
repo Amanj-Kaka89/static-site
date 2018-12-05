@@ -10,8 +10,8 @@ const formData = {
   name: 'Amanj',
   email: 'your@email.com',
   comment: 'This is my comment',
-  priority: 'Medium',
-  topic: ['HTML', 'CSS', 'Javascriot', 'Design'],
+  priority: document.querySelector('input[name="priority"]:checked'),
+  topic: [...document.querySelectorAll('input[type="checkbox"]:checked')].map(v => v.value),
 };
 // ðŸ‘† Write homework code here
 
