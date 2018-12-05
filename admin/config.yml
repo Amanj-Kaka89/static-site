@@ -84,6 +84,7 @@ collections:
               - { label: 'Default Title', name: 'title', widget: 'string' }
               - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff' }
+              - { label: 'Logo Orientation', name: 'logoOrientation', widget: 'select' }
 #   # - name: 'posts'
 #   #   label: 'Posts'
 #   #   label_singular: 'Post'
