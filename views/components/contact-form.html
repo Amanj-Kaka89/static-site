@@ -1,0 +1,61 @@
+<form name="Comments" class="form" netlify>
+  <fieldset>
+        <label>
+          Name
+          <input type="text" name="name" class="name" placeholder="Enter your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" class="email" placeholder="your@email.com" required>
+        </label>
+        <label>
+          Comment
+          <textarea name="comment" class="comment" rows="4" placeholder="Enter some comment" required></textarea>
+        </label>
+         <p>Priority</p>
+        <div class="option">
+          <label>
+            <input type="radio" name="priority" value="Critical">
+            <span>Critical</span>
+          </label>
+          <label class="priority priority--red">
+            <input type="radio" name="priority" value="Medium">
+            <span>Medium</span>
+          </label>
+          <label class="priority priority--red">
+            <input type="radio" name="priority" value="Low">
+            <span>Low</span>
+          </label>
+        </div>
+
+        <p>Topics</p>
+        <div class="options">
+          <label>
+            <input type="checkbox" value="HTML">
+            <span class="spaced caps h6 bold">HTML</span>
+          </label>
+          <label>
+            <input type="checkbox" value="CSS">
+            <span class="spaced caps h6 bold">CSS</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Javascript">
+            <span class="spaced caps h6 bold">Javascript</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Layout">
+            <span class="spaced caps h6 bold">Layout</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Code">
+            <span class="spaced caps h6 bold">Code</span>
+          </label>
+          <label>
+            <input type="checkbox" value="Design">
+            <span class="spaced caps h6 bold">Design</span>
+          </label>
+        </div>
+         <button type="submit">Submit</button>
+        </fieldset>
+ 
+</form>
