@@ -1,15 +1,8 @@
-{% comment %} <div class="grid">
- {% for event in collections.event %}
- {{ event.url }}
- {{ event.data.title }}
- {{ event.data.location }}
- {{ event.data.data }}
- {{ event.data.content }}
- {% endfor %}
- </div> {% endcomment %}
- <div class="grid">
+
+<div class="grid">
   {% for event in collections.event %} 
-    <a class="grid__item" href="{{ event.url }}">
+    <a class="grid__item" href="{{ event.url }}" style="background: url({{ event.data.image }})">
+    <div class="grid__overlay"></div>
       <div>
         <time>
           {% Icon 'clock' %} 
