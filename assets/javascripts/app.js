@@ -7,7 +7,7 @@ const form = document.querySelector('.form');
 const name = document.querySelector('.name');
 const email = document.querySelector('.email');
 const comment = document.querySelector('.comment');
-const topics = [...document.querySelectorAll('.options input[type="checkbox"]:checked')].map(v => v.value),
+const topics = [...document.querySelectorAll('.options input[type="checkbox"]:checked')].map(v => v.value);
 
 // ðŸ‘‡ Write homework code here
 const formData = {
@@ -15,7 +15,7 @@ const formData = {
   Email: email.value,
   Comment: comment.value,
   Priority: document.querySelector('input[name="priority"]:checked').value,
-  Topics: topics
+  Topics: topics,
 };
 const clearForm = () => {
   name.value = '';
@@ -25,18 +25,14 @@ const clearForm = () => {
   [...document.querySelectorAll('input[type = "checkbox"]:checked')].map(v => (v.checked = false));
 };
 // ðŸ‘† Write homework code here
-axios
-  .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }))
-  .then(_ => console.log('success'))
-  .catch(_ => console.log('failed'));
-    .then(_ => {
-  clearForm();
-});
+
 const handleSubmit = e => {
   e.preventDefault();
-  clearForm();
-  formData();
-
+  // clearForm();
+  axios
+    .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }))
+    .then(_ => console.log('success'))
+    .catch(_ => console.log('failed'));
 };
 
 form.addEventListener('submit', handleSubmit);
