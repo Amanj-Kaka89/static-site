@@ -15,7 +15,7 @@ const formData = {
   Email: email.value,
   Comment: comment.value,
   Priority: document.querySelector('input[name="priority"]:checked').value,
-  Topics: topics,
+  Topics: topics.value,
 };
 const clearForm = () => {
   name.value = '';
