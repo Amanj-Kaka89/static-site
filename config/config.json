@@ -3,7 +3,7 @@
     "name": "xuas hatin",
     "lang": "en",
     "title": "Welcome to my website",
-    "url": "https://har-bezhi-guys.com",
+    "url": "https://har-bezhi-guys.netlify.com",
     "description": "",
     "themeColor": "#fb1",
     "skipEmpty": ["home", "faq", "events"],
