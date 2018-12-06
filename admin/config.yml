@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-display_url: https://miloandfinn.netlify.com
-logo_url: https://miloandfinn.netlify.com/assets/favicons/android-chrome-384x384.png
+display_url: https://har-bezhi-guys.netlify.com
+logo_url: https://har-bezhi-guys.netlify.com/assets/favicons/android-chrome-384x384.png
 public_folder: '/images'
 media_folder: 'source/images'
 media_library:
