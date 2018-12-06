@@ -1,0 +1,16 @@
+<meta property="fb:app_id" content="{{ config.analytics.facebook }}">
+<meta name="twitter:site" content="@{{ config.analytics.twitter }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{page.url}}">
+<meta property="og:site_name" content="{{ config.site.name }}">
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+
+{% comment %} 
+  The image below must be a minimum of 1200x630px and an aspect ratio of 1.91:1 with a file size of less than 1 MB.
+{% endcomment %}
+<meta property="og:image" content="{{ cover }}">

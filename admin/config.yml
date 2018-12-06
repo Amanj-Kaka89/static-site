@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: master
 
-display_url: https://har-bezhi-guys.netlify.com
-logo_url: https://har-bezhi-guys.netlify.com/assets/favicons/android-chrome-384x384.png
+display_url: https://miloandfinn.netlify.com
+logo_url: https://miloandfinn.netlify.com/assets/favicons/android-chrome-384x384.png
 public_folder: '/images'
 media_folder: 'source/images'
 media_library:
   name: uploadcare
   config:
-    publicKey: 1e5c4d3f139752a0f159
+    publicKey: 9f0b2b6f1d82d63f1332
 
 collections:
   - name: 'pages'
@@ -21,33 +21,24 @@ collections:
         name: 'one'
         file: 'pages/one.md'
         fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
-          - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'one'}
-          - {label: 'Summary', name: 'summary', hint: 'Will be displayed as a larger text', widget: 'text'}
-          - {label: 'Body', name: 'body', widget: 'markdown'}
-      - label: 'Page Two'
-        name: 'two'
-        file: 'pages/two.md'
-        fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
-          - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'two'}
-          - {label: 'Body', name: 'body', widget: 'markdown'}
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'one' }
+          - { label: 'Summary', name: 'summary', widget: 'text' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'FAQ'
         name: 'faq'
         file: 'pages/faq.md'
         fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav'}
-          - {label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq'}
-          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq'}
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq' }
+          - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
           - label: 'Questions'
             name: 'questions'
             widget: 'list'
-            fields: 
-              - {label: 'Question', name: 'question', widget: 'string'}
-              - {label: 'Answer', name: 'answer', widget: 'text'}
+            fields:
+              - { label: 'Question', name: 'question', widget: 'string' }
+              - { label: 'Answer', name: 'answer', widget: 'text' }
+
   - name: 'events'
     label: 'Events'
     editor:
@@ -58,13 +49,14 @@ collections:
     fields:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Date', name: 'date', widget: 'date'}
-      - {label: 'Image', name: 'image', widget: 'image', required: false}
       - {label: 'Location', name: 'location', widget: 'string'}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'Image', name: 'image', widget: 'image', required: false}
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
-        hint: 'Comma seperate values and must include "event" .For example event, tech, food, sport'
+        hint: "Comma separated values and must include 'event'. For example: event, tech, food, sport"
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+    
   - name: 'settings'
     label: 'Settings'
     delete: false
@@ -79,29 +71,41 @@ collections:
             name: 'site'
             widget: 'object'
             fields:
-              - { label: 'Site Name', name: 'name', widget: 'string' }
-              - { label: 'Language', name: 'lang', widget: 'string' }
-              - { label: 'Default Title', name: 'title', widget: 'string' }
-              - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://' }
-              - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff' }
-              - { label: 'Logo Orientation', name: 'logoOrientation', widget: 'select',  options: ['left', 'right']}
+              - { label: 'Site Name', name: 'name', widget: 'string'}
+              - { label: 'Language', name: 'lang', widget: 'string'}
+              - { label: 'Default Title', name: 'title', widget: 'string'}
+              - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://'}
+              - { label: 'Description', name: 'description', widget: 'string' }
+              - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
+              - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
+              - label: 'Locales'
+                name: 'locales'
+                widget: 'object'
+                fields: 
+                  - { label: 'English', name: 'en', widget: 'string', default: '/en' }
+                  - { label: 'French', name: 'fr', widget: 'string', default: '/fr' }
+          - label: 'Social'
+            name: 'social'
+            widget: 'object'
+            fields:
+              - { label: 'Facebook Page', name: 'facebook', widget: 'string', required: false }
+              - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+              - { label: 'Instagram', name: 'instagram', widget: 'string', required: false }
+          - label: 'Analytics'
+            name: 'analytics'
+            widget: 'object'
+            fields:
+              - { label: 'Facebook App ID', name: 'facebook', widget: 'string', required: false }
+              - { label: 'Twitter Handle', name: 'twitter', widget: 'string', required: false }
+              - { label: 'Google Tracking ID', name: 'google', widget: 'string', required: false, hint: 'Starts with GTM- ...' }
           - label: 'Form'
             name: 'form'
             widget: 'object'
-            fields: 
-              - { label: 'Form name', name: 'name', widget: 'string'}
-#   # - name: 'posts'
-#   #   label: 'Posts'
-#   #   label_singular: 'Post'
-#   #   description: The description is a great place for tone setting, high level information, and editing guidelines that are specific to a collection.
-#   #   folder: 'source/_posts'
-#   #   editor:
-#   #     preview: false
-#   #   create: true
-#   #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-#   #   fields:
-#   #     - {label: 'Title', name: 'title', widget: 'string'}
-#   #     - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-#   #     - {label: 'Cover Image', name: 'image', widget: 'image', required: false}
-#   #     - {label: 'Language', name: 'language', widget: 'select' options: ['en', 'fr']}
-#   #     - {label: 'Body', name: 'body', widget: 'markdown'}
+            fields:
+              - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
+          - label: 'Fallback Images'
+            name: 'fallback'
+            widget: 'object'
+            fields:
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }

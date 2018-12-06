@@ -1,14 +1,33 @@
 {
   "site": {
-    "name": "zhinga",
+    "name": "Milo & Finn",
     "lang": "en",
-    "title": "quas hatin",
-    "url": "https://har-bezhi-guys.netlify.com/",
-    "themeColor": "#ffffff",
-    "admin": "admin@email.com",
-    "logoOrientation": "left"
+    "title": "Welcome to my website",
+    "url": "https://miloandfinn.netlify.com",
+    "description": "",
+    "themeColor": "#fb1",
+    "skipEmpty": ["home", "faq", "events"],
+    "webmaster": "admin@email.com",
+    "locales": {
+      "en": "/en",
+      "fr": "/fr"
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/miloandfinn",
+    "twitter": "https://twitter.com/miloandfinn",
+    "instagram": "https://instagram.com/miloandfinn"
+  },
+  "analytics": {
+    "google": "GTM-KF5SH47",
+    "twitter": "handle",
+    "facebook": "1234567890"
   },
   "form": {
-    "name": "name"
+    "name": "Red"
+  },
+  "fallback": {
+    "image": "https://uploads-ssl.webflow.com/5bff8886c3964a992e90d465/5c00621b7aefa4f9ee0f4303_wide-shot.svg",
+    "thumbnail": "https://uploads-ssl.webflow.com/5bff8886c3964a992e90d465/5c00621b7aefa4f9ee0f4303_wide-shot.svg"
   }
 }
