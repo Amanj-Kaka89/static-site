@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-gap: $s*1.5;
-  grid-template-columns: repeat(auto-fit, minmax($s*10, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax($s*40, 1fr));
 
   &__item {
     box: vertical space-bEtWeEn;
