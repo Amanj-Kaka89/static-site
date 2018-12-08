@@ -1,26 +1,38 @@
 .grid {
   display: grid;
   grid-gap: $s*1.5;
-  grid-template-columns: repeat(auto-fit, minmax($s*40, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax($s*10, 1fr));
+  padding-bottom: 30px;
 
   &__item {
-    box: vertical space-bEtWeEn;
+    box: horizontal space-between;
     text-decoration: none;
     padding: $s*2;
     border-radius: 15px;
-    background-size: cover;
-    background-position: center center;
     transition: all $fast ease-in-out;
+    width: 250px;
+    height: 300px;
+
+    a {
+      background-repeat: no-repeat;
+      background-size: 250px 300px;
+      background-image: auto;
+    }
 
     >div {
-      box: horizontal space-between;
+      box: vertical space-between;
       margin-bottom: $s*7;
+
     }
 
     time,
     span {
       box: horizontal middle;
-      color: $white;
+      color: blue;
+      text-align: left;
+      font-family: cursive;
+
+
     }
 
     svg {
@@ -30,6 +42,7 @@
 
     h4 {
       margin: 0;
+      text-align: center;
     }
 
     &:hover {
@@ -39,7 +52,7 @@
   }
 
   &__overlay {
-    position: absolute;
+    position: inherit;
     top: 0;
     left: 0;
     right: 0;

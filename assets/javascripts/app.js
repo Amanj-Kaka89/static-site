@@ -28,6 +28,7 @@ const handleSubmit = e => {
     priority: document.querySelector('input[name="priority"]:checked').value,
     topic: [...document.querySelectorAll('.options input[name="topic"]:checked')].map(v => v.value),
   };
+  // console.log(qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }));
   axios
     .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }))
     .then(_ => console.log('success'))
