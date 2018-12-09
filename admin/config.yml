@@ -18,7 +18,6 @@ collections:
       preview: false
     folder: 'pages'  
     create: true
-    slug: '{{slug}}'
     files:
       - label: 'Page One'
         name: 'one'
