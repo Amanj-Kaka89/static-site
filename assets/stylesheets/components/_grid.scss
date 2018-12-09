@@ -1,8 +1,9 @@
 .grid {
   display: grid;
-  grid-gap: $s*1.5;
+  grid-gap: $s*2.5;
   grid-template-columns: repeat(auto-fit, minmax($s*10, 1fr));
   padding-bottom: 30px;
+
 
   &__item {
     box: horizontal space-between;
@@ -12,11 +13,6 @@
     transition: all $fast ease-in-out;
     width: 250px;
     height: 300px;
-
-    a {
-      background-repeat: no-repeat;
-      background-size: 250px 300px;
-    }
 
     >div {
       box: vertical space-between;

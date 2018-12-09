@@ -1,0 +1,10 @@
+<div class="accordion">
+  {% for item in questions %}
+    <div class="accordion__item">
+      <input type="checkbox" checked>
+      {% Icon 'plus' %}
+      <h5>{{ item.question }}</h5>
+      <p>{{ item.answer }}</p>
+    </div>
+  {% endfor %}
+</div>
