@@ -16,7 +16,6 @@
     a {
       background-repeat: no-repeat;
       background-size: 250px 300px;
-      background-image: auto;
     }
 
     >div {
@@ -52,7 +51,7 @@
   }
 
   &__overlay {
-    position: inherit;
+    position: initial;
     top: 0;
     left: 0;
     right: 0;
