@@ -1,11 +1,10 @@
 ---
-title: Page One
-tags: nav
+title: This is my third page
 slug: one
-summary: I am a page summary
+summary: I am  the content
 ---
-![](https://ucarecdn.com/fb39f56c-094a-426a-a68d-734e5de24220/)
+![this is an aemerican duck](https://ucarecdn.com/f8858cdc-456e-43c1-9e97-62a16d613624/)
 
 ## Hey
 
-Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. gdhfgfhsash hg hasahfghd gf hdgfh ghj. wehfhjsd gfewh ewgfhhfg vash gjffhhew.try to fix git problem
+What's up?
