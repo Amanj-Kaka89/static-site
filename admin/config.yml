@@ -16,7 +16,6 @@ collections:
     label: 'Pages'
     editor:
       preview: false
-    folder: 'pages'  
     create: true
     files:
       - label: 'Page One'
