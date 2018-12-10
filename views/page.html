@@ -1,6 +1,7 @@
 {% layout 'includes/layout.html' %}
 
 {% block content %}
+    {% include 'components/social-share.html' %}
 
   <div class="container">
     <h1>{{ title }}</h1>
@@ -21,7 +22,6 @@
       {% endcase %}  
     </div>
   </div>
-    {% include 'components/social-share.html' %}
 
 {% endblock %}
 

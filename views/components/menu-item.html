@@ -1,0 +1,8 @@
+{% if item.url == page.url %}
+  {% assign class = 'menu__link menu__link--active' %}
+{% else %}
+  {% assign class = 'menu__link' %}
+{% endif %}
+<a href="{{ item.url }}" class="{{ class }}">
+  {{ item.data.navtitle | default: item.data.title }}
+</a>

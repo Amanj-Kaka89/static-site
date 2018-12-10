@@ -39,7 +39,25 @@ collections:
             fields:
               - { label: 'Question', name: 'question', widget: 'string' }
               - { label: 'Answer', name: 'answer', widget: 'text' }
-
+      - label: 'About Us'
+        name: 'about'
+        file: 'pages/about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'about' }
+          - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
+          - { label: 'Summary', name: 'summary', widget: 'text' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }        
+      - label: 'Tentang Kami'
+        name: 'tentang'
+        file: 'pages/id/tentang.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'tentang-kami' }
+          - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'navId' }
+          - { label: 'Lang', name: 'lang', widget: 'hidden', default: 'id' }
+          - { label: 'Summary', name: 'summary', widget: 'text' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'events'
     label: 'Events'
     editor:
