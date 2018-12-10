@@ -9,8 +9,8 @@
     "skipEmpty": ["home", "faq", "events"],
     "webmaster": "admin@email.com",
     "locales": {
-      "en": "/en",
-      "fr": "/fr"
+      "en": "/",
+      "id": "/id"
     }
   },
   "social": {
