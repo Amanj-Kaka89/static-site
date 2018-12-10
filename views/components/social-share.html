@@ -1,0 +1,35 @@
+{% assign shareTitle = title | default: config.site.title | url_encode %}
+{% capture url %}{{ config.site.url }}{{page.url}}{% endcapture %} 
+
+{% capture facebook %}
+	https://www.facebook.com/dialog/share?app_id={{config.analytics.facebook}}&display=popup&href={{url}}
+{% endcapture %} 
+
+{% capture twitter %}
+	https://twitter.com/intent/tweet?text={{shareTitle}}&url={{url}}&via={{config.analytics.twitter}}
+{% endcapture %} 
+
+{% capture email %}
+	mailto:?subject={{shareTitle}}&body={{url}}
+{% endcapture %} 
+
+{% capture whatsapp %}
+	https://wa.me/?text={{shareTitle}}%20{{url}}
+{% endcapture %} 
+
+<p class="share__heading h6 spaced caps faint">Share</p>
+
+<div class="share">
+	<a href="{{ facebook }}" class="share__button" target="_blank">
+		{% Icon 'facebook' %}
+	</a>
+	<a href="{{ twitter }}" class="share__button" target="_blank">
+		{% Icon 'twitter' %}
+	</a>
+	<a href="{{ email }}" class="share__button" target="_blank">
+		{% Icon 'mail' %}
+	</a>
+	<a href="{{ whatsapp }}" class="share__button" target="_blank">
+		{% Icon 'whatsapp' %}
+	</a>
+</div>
