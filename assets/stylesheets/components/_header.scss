@@ -13,7 +13,15 @@
 
   .menu {
     &__link {
-      padding: $h;
+      padding: 5px;
+      text-decoration: none;
+      color: $black;
+      background-color: green;
+
+      &:hover {
+        background-color: $gray-100;
+        transition: .35s ease-in-out;
+      }
     }
   }
 
